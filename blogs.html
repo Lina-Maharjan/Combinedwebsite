@@ -3,26 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SerenitySpace - Video Guide</title>
+    <title>Blogs</title>
     <link rel="stylesheet" href="website.css">
+    <script src="website.js" defer></script>
 </head>
 <body>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="videoguide.html" class="active">Video Guide</a></li>
-            <li><a href="personal_stories.html">Personal-stories | Blogs</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </nav>
+    <!-- Header Section -->
     <header>
-        <h1>Watch videos to learn more....</h1>
-        <p>You can also recommend us more videos</p>
-        <img src="images/video.png" alt="">
+        <h1>Share Your Story & Watch Videos</h1>
+        <p>Your story can inspire and help others.</p>
     </header>
 
-    <main>
-        <!-- Mental Health Importance Section -->
+    <!-- Personal Stories Section -->
+    <section class="story-form">
+        <h2>Submit Your Story</h2>
+        <textarea id="storyInput" placeholder="Write your story here..." rows="5"></textarea>
+        <input type="text" id="nameInput" placeholder="Your Name (optional)">
+        <button id="submitBtn">Submit</button>
+    </section>
+
+    <section class="story-list">
+        <h2>Stories</h2>
+        <ul id="storiesUl"></ul>
+    </section>
+
+
+
+    <!-- Mental Health Importance Section -->
         <section id="mental-health-importance" class="video-section">
             <h2>Mental Health Importance</h2>
             <div class="video-grid">
@@ -93,12 +108,12 @@
                 <p class="video-title">There's no shame in taking care of your mental health </p></div>
             </div>
         </section>
-    </main>
+    
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 SerenitySpace. All rights reserved.</p>
+        <p>&copy; 2023 SerenitySpace. All rights reserved.</p>
     </footer>
 
-    <script src="website.js"></script>
 </body>
 </html>
